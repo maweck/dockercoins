@@ -4,7 +4,7 @@ FROM node:lts-slim
 WORKDIR /usr/app
 
 RUN npm install express@4.17.0
-RUN npm install redis
+RUN npm install redis@3.1.2
 COPY files/ ./files/
 COPY webui.js .
 CMD ["node", "webui.js"]
